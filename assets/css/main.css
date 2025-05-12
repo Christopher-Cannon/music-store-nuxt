@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  transition: border 0.1s ease-in-out, outline 0.1s ease-in-out;
+}
+
+select {
+  padding: 0.6rem 0.5rem;
+}
+
+textarea {
+  min-height: 6rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1024px;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.link {
+  color: #c10007;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link.lighter {
+  color: #fb2c36;
+}
+
+@media screen and (max-width: 767.97px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
